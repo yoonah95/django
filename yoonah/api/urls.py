@@ -15,5 +15,6 @@ router.register(r'signs', views.SignViewSet)
  
 urlpatterns = [
     url(r'^', include(router.urls)),
+    url(r'test/', views.testview),
     url(r'^api-v1/', include('rest_framework.urls', namespace='rest_framework_category')),
 ]

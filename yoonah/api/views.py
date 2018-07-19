@@ -19,3 +19,8 @@ class SignViewSet(viewsets.ModelViewSet):
     queryset = Sign.objects.all()
     serializer_class = SignSerializer
 
+def testview(request) :
+	if request.method == 'post':
+		print(request.post['clientid'])
+
+
